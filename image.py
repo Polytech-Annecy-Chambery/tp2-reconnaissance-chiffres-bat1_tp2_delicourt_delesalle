@@ -53,8 +53,8 @@ class Image:
         im_bin.set_pixels(np.zeros((self.H, self.W), dtype=np.uint8))
 # TODO: boucle imbriquees pour parcourir tous les pixels de l'image im_bin
 # et calculer l'image binaire
-        for i in range(0,len(self.M)):
-            for j in range(0,len(self.W[i])):
+        for i in range(0,len(self.H)):
+            for j in range(0,len(self.W)):
                 if(self.pixels[i][j]<S):
                     im_bin.pixels[i][j]=0
                 else:
